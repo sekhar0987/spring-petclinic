@@ -10,7 +10,7 @@ pipeline {
                 sh "./mvwn install"
             }
         }
-        stage ( "run test") {
+        stage ( "Run unit test") {
 
             steps {
                 sh "./mvwn test"
