@@ -7,13 +7,13 @@ pipeline {
         stage ("Build"){
 
             steps {
-                sh "./mvwn install"
+                sh "./mvnw install"
             }
         }
         stage ( "Run unit test") {
 
             steps {
-                sh "./mvwn test"
+                sh "./mvnw test"
             }
         }
     }
